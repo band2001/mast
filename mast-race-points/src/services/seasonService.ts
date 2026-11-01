@@ -1,3 +1,9 @@
+import Repository from "../repository/Repository"
+
 class SeasonService {
-    constructor() {}
+    repository: Repository
+    
+    constructor() {
+        this.repository = Repository.getInstance()
+    }
 }
