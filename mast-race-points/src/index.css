@@ -1,8 +1,11 @@
+:root {
+  --mast-blue: #22407C;
+  --mast-red: #9B2A32;
+  --mast-white: #ffffff;
+}
+
 body {
-  font-family:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+  font-family: Helvetica, Arial,
     sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  margin: 0px;
 }

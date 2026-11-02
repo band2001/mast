@@ -1,5 +1,5 @@
 import { BottomNavigation, BottomNavigationAction, Box } from "@mui/material"
-import { Home as HomeIcon, Person } from "@mui/icons-material";
+import { Assignment, Functions, Home as HomeIcon, Person, SunnySnowing } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -10,10 +10,11 @@ export const MainNavigation = () => {
     }) 
 
     return(
-        <Box sx={{ width: 500 }}>
+        <Box>
             <BottomNavigation
                 value={value}
                 onChange={onChange}
+                showLabels
             >
                 <BottomNavigationAction 
                     label="Home" 
@@ -26,6 +27,24 @@ export const MainNavigation = () => {
                     icon={<Person />} 
                     component={Link}
                     to="/racer-management"
+                />
+                <BottomNavigationAction
+                    label="Season Management"
+                    icon={<SunnySnowing />}
+                    component={Link}
+                    to="season-management"
+                />
+                <BottomNavigationAction
+                    label="Race Management"
+                    icon={<Assignment />}
+                    component={Link}
+                    to="race-management"
+                />
+                <BottomNavigationAction
+                    label="Race Points"
+                    icon={<Functions />}
+                    component={Link}
+                    to="race-points"
                 />
             </BottomNavigation>
         </Box>
