@@ -1,9 +1,6 @@
-interface Team extends Document {
-    _id: string
-    type: string
-    createdAt: string
-    updatedAt: string
+import { Document } from "./document"
 
+export interface Team extends Document {
     name: string,
     aliases: string[]
 }

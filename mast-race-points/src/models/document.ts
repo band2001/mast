@@ -1,6 +1,7 @@
-interface Document {
+export interface Document {
     _id: string
     type: string
-    createdAt: string
-    updatedAt: string
+    deleted: boolean
+    createdAt: number
+    updatedAt: number
 }
