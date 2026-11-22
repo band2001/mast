@@ -1,9 +1,6 @@
-interface Race extends Document {
-    _id: string
-    type: string
-    createdAt: string
-    updatedAt: string
+import { Document } from "./document"
 
+export interface Race extends Document {
     name: string
     venue: string
     classification: string

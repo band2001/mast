@@ -1,9 +1,6 @@
-interface TeamResult extends Document {
-    _id: string
-    type: string
-    createdAt: string
-    updatedAt: string
+import { Document } from "./document"
 
+export interface TeamResult extends Document {
     raceId: string
     finish: number
     teamId: string
